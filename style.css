@@ -1,0 +1,176 @@
+/*Paramétrage En-tête*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin: 0px 50px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  background-image: url(images/couronne-fond.png);
+  border: 1px solid black;
+}
+header .logo {
+  width: 110px;
+  text-align: center;
+  background-color: gold;
+  border-right: 1px solid black;
+}
+header img {
+  height: 57px;
+}
+.menu ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li,
+a {
+  display: block;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: white;
+}
+.menu li.en-cours a {
+  background-color: rgb(255, 215, 0, 0.8);
+  color: black;
+}
+.menu a:hover {
+  background-color: rgb(255, 215, 0, 0.8);
+  color: black;
+}
+.menu a {
+  padding: 15px 30px;
+  margin-right: 20px;
+  border: 2px dashed rgb(255, 215, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+/*Paramétrage commun:*/
+body {
+  font-family: "Tilt Neon", sans-serif;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+h2 {
+  margin: 20px 0;
+  font-size: 1.8em;
+}
+p {
+  text-align: justify;
+}
+/*Page Home*/
+.home h1 {
+  display: flex;
+  height: 330px;
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/photoColchis.jpg);
+  max-width: 1400px;
+  margin: auto;
+  background-repeat: no-repeat;
+  text-shadow: white 2px 0 10px;
+}
+.home img {
+  display: flex;
+  height: 60%;
+  margin-right: auto;
+  margin-left: auto;
+}
+footer {
+  background-color: gold;
+  height: 5px;
+}
+
+/*Page Royal Family*/
+.portrait {
+  display: flex;
+  justify-content: space-around;
+}
+.photo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+.photo h3 {
+  font-size: 1.4em;
+  margin: 20px 0;
+}
+.portrait p {
+  position: absolute;
+  top: 80px;
+  left: 60px;
+  width: 200px;
+  background-color: rgb(255, 255, 255, 0);
+  border-radius: 5px;
+  padding: 20px;
+  color: rgb(0, 0, 0, 0);
+  line-height: 1.3em;
+}
+.portrait p:hover {
+  position: absolute;
+  top: 80px;
+  left: 50px;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.76);
+  border-radius: 5px;
+  padding: 40px;
+  color: rgb(0, 0, 0);
+  line-height: 1.3em;
+}
+
+/*page Assets*/
+table {
+  margin-bottom: 30px;
+}
+
+table,
+th,
+tr,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px 60px;
+  text-align: center;
+}
+
+table th {
+  background-color: gold;
+}
+tr:nth-child(odd) {
+  background-color: rgba(249, 249, 226, 0.95);
+}
+
+/*Page contact us*/
+form {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  margin: 20px 0 20px 0;
+}
+.champ {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+form input,
+textarea {
+  border: 1.5px solid black;
+}
+
+.submit {
+  display: flex;
+  justify-content: flex-end;
+}
+.submit input {
+  padding: 5px;
+  box-shadow: 3px 3px 3px rgb(63, 59, 59);
+}
